@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ComicController;
+use App\Http\Controllers\Guest\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,29 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', [PageController::class, 'home'])->name('home');
 
-    $icons = [
-        [
-            "src" => "buy-comics-digital-comics.png",
-            "title" => "Digital Comics"
-        ],
-        [
-            "src" => "buy-comics-merchandise.png",
-            "title" => "Merchandise"
-        ],
-        [
-            "src" => "buy-comics-shop-locator.png",
-            "title" => "Shop Locator"
-        ],
-        [
-            "src" => "buy-comics-subscriptions.png",
-            "title" => "Subscription"
-        ],
-        [
-            "src" => "buy-dc-power-visa.svg",
-            "title" => "Power Visa"
-        ],
-    ];
-    return view('home', compact('icons'));
-})->name('home');
+Route::resource('/comics', ComicController::class);

@@ -24,13 +24,34 @@
     </div>
 
     <div class="links">
-        @foreach ($icons as $icon)
-        <div class="link">
-            <img src="{{Vite::asset('resources/images/' . $icon['src'])}}" alt="">
-            {{$icon['title']}}
-        </div>
-            
-        @endforeach
+        <div class="links">
+            <div class="link">
+        <img src="http://[::1]:5173/resources/images/buy-comics-digital-comics.png" alt="">
+        Digital Comics
+    </div>
+        
+            <div class="link">
+        <img src="http://[::1]:5173/resources/images/buy-comics-merchandise.png" alt="">
+        Merchandise
+    </div>
+        
+            <div class="link">
+        <img src="http://[::1]:5173/resources/images/buy-comics-shop-locator.png" alt="">
+        Shop Locator
+    </div>
+        
+            <div class="link">
+        <img src="http://[::1]:5173/resources/images/buy-comics-subscriptions.png" alt="">
+        Subscription
+    </div>
+        
+            <div class="link">
+        <img src="http://[::1]:5173/resources/images/buy-dc-power-visa.svg" alt="">
+        Power Visa
+    </div>
+        
+    
+</div>
 
     </div>
 
