@@ -97,6 +97,43 @@ header {
     }
 }
 
+main {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 3em 0;
+
+    #comics-list {
+        .comic {
+            .comic-img {
+                width: 100%;
+                aspect-ratio: 1;
+                margin-bottom: 1em;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            .comic-title {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    button {
+        background-color: #0282f9;
+        padding: .5em 3em;
+        color: white;
+    }
+
+
+    &#comic-show {
+        #comic-image {
+            height: auto;
+            width: 100%;
+        }
+
+    }
+}
+
 footer {
     #footer-up {
         background-image: url('../images/footer-bg.jpg');

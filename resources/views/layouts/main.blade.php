@@ -19,34 +19,34 @@
 
     @include('partials/header')
 
-    <div class="container">
+    <div>
         @yield('content')
     </div>
 
     <div class="links">
         <div class="links">
             <div class="link">
-        <img src="http://[::1]:5173/resources/images/buy-comics-digital-comics.png" alt="">
+        <img src="{{Vite::asset('resources/images/buy-comics-digital-comics.png')}}" alt="">
         Digital Comics
     </div>
         
             <div class="link">
-        <img src="http://[::1]:5173/resources/images/buy-comics-merchandise.png" alt="">
+        <img src="{{Vite::asset('resources/images/buy-comics-merchandise.png')}}" alt="">
         Merchandise
     </div>
         
             <div class="link">
-        <img src="http://[::1]:5173/resources/images/buy-comics-shop-locator.png" alt="">
+        <img src="{{Vite::asset('resources/images/buy-comics-shop-locator.png')}}" alt="">
         Shop Locator
     </div>
         
             <div class="link">
-        <img src="http://[::1]:5173/resources/images/buy-comics-subscriptions.png" alt="">
+        <img src="{{Vite::asset('resources/images/buy-comics-subscriptions.png')}}" alt="">
         Subscription
     </div>
         
             <div class="link">
-        <img src="http://[::1]:5173/resources/images/buy-dc-power-visa.svg" alt="">
+        <img src="{{Vite::asset('resources/images/buy-dc-power-visa.svg')}}" alt="">
         Power Visa
     </div>
         
