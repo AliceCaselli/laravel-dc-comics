@@ -41,5 +41,11 @@
             </div>
         </div>
 
+        <br>
+
+        <div class="text-center">
+            <a class="btn btn-primary" href="{{route('comics.edit', $comic)}}">Modifica fumetto</a>
+        </div>
+
     </main>
 @endsection
