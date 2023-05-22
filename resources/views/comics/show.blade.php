@@ -43,8 +43,14 @@
 
         <br>
 
-        <div class="text-center">
+        <div class="d-flex justify-content-center">
             <a class="btn btn-primary" href="{{route('comics.edit', $comic)}}">Modifica fumetto</a>
+            <form action="{{route('comics/destroy', $comic->id)}}" method="POST">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn btn-danger mx-5">Elimina fumetto</button>
+            </form>
+             
         </div>
 
     </main>
