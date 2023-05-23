@@ -56,6 +56,9 @@
     </div>
 
     @include('partials/footer')
-</body>
 
+    @yield('script')
+    
+</body>
+ 
 </html>

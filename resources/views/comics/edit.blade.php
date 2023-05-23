@@ -5,6 +5,7 @@
     <h1>Modifica il fumetto {{$comic->title}}</h1>
     <form action="{{route('comics.update', $comic)}}" method="POST" class="py-5">
         @csrf
+        @method('PUT')
 
         <div class="mb-3">
             <label for="title">Titolo</label>
@@ -13,7 +14,7 @@
 
         <div class="mb-3">
             <label for="description">Descrizione</label>
-            <textarea class="form-control" name="description" id="description">{{$comic->textarea}}</textarea>
+            <textarea class="form-control" name="description" id="description">{{$comic->description}}</textarea>
         </div>
 
         <div class="mb-3">

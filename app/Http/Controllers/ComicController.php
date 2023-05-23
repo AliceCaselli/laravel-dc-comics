@@ -104,6 +104,6 @@ class ComicController extends Controller
     {
         $comic->delete();
 
-        return redirect()->route('comics.idex');
+        return redirect()->route('comics.index');
     }
 }

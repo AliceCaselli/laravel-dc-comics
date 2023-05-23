@@ -38,7 +38,7 @@
     <hr class="mb-5">
 
     <div class="container text-center">
-        <a href="{{route('comics.create')}}">Aggiungi un fumetto</a>
+        <a class=" btn btn-primary mb-5" href="{{route('comics.create')}}">Aggiungi un fumetto</a>
     </div>
 
 @endsection
